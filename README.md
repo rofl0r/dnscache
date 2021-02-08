@@ -66,11 +66,11 @@ you can check your rules like so:
     iptables -t nat -L --line-numbers
 
 this will show you the rules for chains `OUTPUT` and `PREROUTING` with
-linenumbers, which can be used with the command
+linenumbers, which can be deleted with the command
 
     iptables -t nat -D CHAINNAME N
 
-where N is that linenumber.
+where N is that linenumber, in case the rule doesn't work as expected.
 
 
 implementation details
